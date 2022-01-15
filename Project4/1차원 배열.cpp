@@ -26,6 +26,7 @@ int test_1(int arr[], int n) {
 			result = result < dp[i] ? dp[i] : result;
 		}
 	}
+	if (result == 0) result = 1;
 	return result;
 }
 
